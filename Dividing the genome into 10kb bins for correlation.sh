@@ -1,0 +1,3 @@
+#Dividing the genome into 10kb bins for correlation
+
+multiBamSummary  bins  -bs 1000 --bamfiles  d_k9_deduplicate.bam d_k27_deduplicate.bam In_d_deduplicate.bam n_d_k9_deduplicate.bam n_d_k27_deduplicate.bam In_n_d_deduplicate.bam p_d_k9_deduplicate.bam p_d_k27_deduplicate.bam In_p_d_deduplicate.bam --minMappingQuality  30 --labels  d_k9 d_k27 In_d n_d_k9 n_d_k27 In_n_d p_d_k9 p_d_k27 In_p_d -out count_.npz  --outRawCounts  count_.tab
